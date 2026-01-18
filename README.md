@@ -1,6 +1,6 @@
 # 🌡️ IoT Temperature System V2: De Excel a Infraestructura Inmortal
 
-> **"Donde algunos ven problemas, otros vemos mejora"**
+> **"Donde hay una limitación técnica, hay una oportunidad de optimización"**
 
 ## 📝 Visión del Proyecto
 Este proyecto nace de la convergencia entre mi experiencia previa en monitoreo térmico y lo aprendido en la **Pipeline de Extracción de Datos (Sector Machas)**. 

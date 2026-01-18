@@ -5,7 +5,7 @@
 ## 📝 Visión del Proyecto
 Este proyecto nace de la convergencia entre mi experiencia previa en monitoreo térmico y lo aprendido en la **Pipeline de Extracción de Datos (Sector Machas)**. 
 
-La problemática principal era la gestión del volumen de datos: con lecturas cada minuto, generamos **1,440 registros diarios**, una cifra que en un año sería impensable de manejar en un Excel. Aunque la solución fácil sería espaciar las lecturas, optamos por otro camino: migrar los datos a una base de datos profesional. 
+La problemática principal es la proyeccion a futuro del volumen de datos: Capturar 1,440 celdas diarias es sencillo; gestionarlas durante un año es el verdadero reto. Aunque la solución fácil sería espaciar las lecturas, optamos por otro camino: migrar los datos a una base de datos profesional. 
 
 A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC convencional. Dado que los datos se suben con alta frecuencia, si el PC se apaga, se pierde esa continuidad. Para solucionar esto, utilicé mi experiencia con **Raspberry Pi** y **Docker** para crear un servidor de bajo consumo que garantiza la disponibilidad de los datos 24/7.
 

@@ -19,14 +19,50 @@ A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC 
 * **Visualización:** Grafana.
 ---
 
-##  Estructura del Repositorio
+## Estructura del Repositorio
+## code_raspberry
+En este apartado se detalla la preparacion de la unidad central del sistema:
 
-* ###  `base_de_datos_en_raspberry`
-    Información detallada sobre la configuración de la Raspberry Pi y el despliegue de contenedores con Docker.
-* ###  `apartado_sensores`
-    Código fuente y lógica de captura. Se incluye la base del proyecto pasado con las actualizaciones necesarias en el código para la nueva infraestructura.
-* ###  `apartado_graficos`
-    Documentación sobre la conexión de la base de datos y la visualización de métricas en tiempo real mediante Grafana.
+Instalacion del Sistema Operativo: Uso de la plataforma oficial Raspberry Pi Imager y configuracion inicial del sistema.(no esta explicado)
+
+Control Remoto: Habilitacion de VNC para controlar la Raspberry Pi mediante RealVNC Viewer, permitiendo una gestion visual constante de los procesos.(no esta explicado, hay videos y generalmente se hace por ssh, yo me acostumbre a vnc por temas de gusto)
+
+Infraestructura Docker: Despliegue del ecosistema mediante un archivo en la carpeta iot_project que gestiona los contenedores de n8n, Grafana y PostgreSQL de forma simultanea.
+
+## n8n y n8n_produccion
+Documentacion de la logica y el flujo de datos:
+
+## n8n Test: Configuracion inicial accesible a traves de localhost para crear secciones de prueba y validar el ingreso de datos a la base de datos.
+
+## n8n produccion: Implementacion del flujo final, realizacion del publish y optimizacion del codigo para asegurar un flujo de datos real y continuo.
+
+##code_esp32
+Contiene los programas desarrollados para el microcontrolador:
+
+Modo Prueba: Codigo base para validar que el sensor captura y envia datos correctamente a la infraestructura.
+
+Modo Produccion: Codigo definitivo para el funcionamiento continuo y estable en el entorno real.
+
+## grafana
+Guia sobre la visualizacion y analisis de las metricas:
+
+Conexion: Pasos para vincular la base de datos PostgreSQL con el panel de Grafana.
+
+Analisis de Datos: Configuracion de graficos principales con tres marcas de referencia:
+
+Marca en 0 grados: Para monitorear con que frecuencia se sobrepasa esta marca.
+
+Marca en 5 grados: Establecida como umbral de alerta.
+
+Marca en 30 grados: Para el seguimiento de la temperatura exterior.
+
+## img e img_grafana
+## img: Contiene capturas de pantalla detalladas para hacer mas visual el proceso de configuracion de n8n.
+
+## img_grafana: Incluye imagenes del tablero final de control y ejemplos de las configuraciones.
+
+## Notas de Mantenimiento
+Se menciona que la Raspberry Pi permanece encendida las 24 horas del dia para garantizar el monitoreo constante. Por esta razon, se recomienda el uso de una carcasa con ventilador o sistema de disipacion para proteger el hardware.
 
 ---
 

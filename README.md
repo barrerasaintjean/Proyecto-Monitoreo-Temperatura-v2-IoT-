@@ -1,8 +1,8 @@
-# 🌡️ IoT Temperature System V2: De Excel a Infraestructura Inmortal
+#  IoT Temperature System V2: De Excel a Infraestructura Inmortal
 
 > **"Donde hay una limitación técnica, hay una oportunidad de optimización"**
 
-## 📝 Visión del Proyecto
+##  Visión del Proyecto
 Este proyecto nace de la convergencia entre mi experiencia previa en monitoreo térmico y lo aprendido en la **Pipeline de Extracción de Datos (Sector Machas)**. 
 
 La problemática principal es la proyeccion a futuro del volumen de datos: Capturar 1,440 celdas diarias es sencillo; gestionarlas durante un año es el verdadero reto. Aunque la solución fácil sería espaciar las lecturas, optamos por otro camino: migrar los datos a una base de datos profesional. 
@@ -11,7 +11,7 @@ A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC 
 
 ---
 
-## 🛠️ Herramientas Utilizadas
+##  Herramientas Utilizadas
 * **Hardware:** Raspberry Pi 4 (4GB RAM), ESP32 y sensores del proyecto pasado.
 * **Infraestructura:** Docker (para contenedores aislados y persistentes).
 * **Orquestación:** n8n (flujo de automatización vía Webhooks).
@@ -19,18 +19,18 @@ A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC 
 * **Visualización:** Grafana.
 ---
 
-## 🗂️ Estructura del Repositorio
+##  Estructura del Repositorio
 
-* ### 📁 `base_de_datos_en_raspberry`
+* ###  `base_de_datos_en_raspberry`
     Información detallada sobre la configuración de la Raspberry Pi y el despliegue de contenedores con Docker.
-* ### 📁 `apartado_sensores`
+* ###  `apartado_sensores`
     Código fuente y lógica de captura. Se incluye la base del proyecto pasado con las actualizaciones necesarias en el código para la nueva infraestructura.
-* ### 📁 `apartado_graficos`
+* ###  `apartado_graficos`
     Documentación sobre la conexión de la base de datos y la visualización de métricas en tiempo real mediante Grafana.
 
 ---
 
-## 🚀 Impacto del Proyecto
+##  Impacto del Proyecto
 
 * **Eficiencia Energética:** Reducción drástica del consumo eléctrico al migrar la carga de trabajo de un PC convencional a una **Raspberry Pi 4**.
 * **Integridad de Datos:** Disponibilidad 24/7 que elimina los "huecos" de información en las gráficas, asegurando una base de datos continua.
@@ -38,19 +38,19 @@ A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC 
 
 ---
 
-## 🏁 Conclusión
+##  Conclusión
 
 > **"Es importante saber cuáles son las limitantes de cada proyecto para saber cómo mejorarlas en el futuro."**
 
 La mejora de este proyecto permite alargar la supervisión de la cámara de frío, facilitando análisis comparativos entre estaciones. La práctica de combinar Docker, Raspberry Pi y bases de datos es una combinación poderosa para bajar el consumo energético y mantener activa la base de datos. Con el tiempo, se podrán sumar más sensores e ir transformando el entorno en una **industria inteligente**.
 
-## 🛠️ El Diagrama de Flujo (Data Journey)
+##  El Diagrama de Flujo (Data Journey)
 
 ```text
   [ ENTORNO FÍSICO ]           [ SERVIDOR RASPBERRY PI (DOCKER) ]          [ VISUALIZACIÓN ]
   
-   🌡️ Sensor Temp/Hum           📥 n8n Webhook (ETL)                 📊 Grafana Dashboard
+    Sensor Temp/Hum            n8n Webhook (ETL)                  Grafana Dashboard
           |                             |                                     ^
           v                             v                                     |
-   🐍 ESP32 / Python   ------>   🐘 PostgreSQL DB      -----------------------+
+    ESP32 / Python   ------>    PostgreSQL DB      -----------------------+
    (Lectura 1 min)            (Persistencia 24/7)             (Análisis de Tendencias)

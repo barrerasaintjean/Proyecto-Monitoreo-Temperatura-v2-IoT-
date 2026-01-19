@@ -32,9 +32,9 @@ Infraestructura Docker: Despliegue del ecosistema mediante un archivo en la carp
 ## n8n y n8n_produccion
 Documentacion de la logica y el flujo de datos:
 
-## n8n Test: Configuracion inicial accesible a traves de localhost para crear secciones de prueba y validar el ingreso de datos a la base de datos.
+n8n Test: Configuracion inicial accesible a traves de localhost para crear secciones de prueba y validar el ingreso de datos a la base de datos.
 
-## n8n produccion: Implementacion del flujo final, realizacion del publish y optimizacion del codigo para asegurar un flujo de datos real y continuo.
+n8n produccion: Implementacion del flujo final, realizacion del publish y optimizacion del codigo para asegurar un flujo de datos real y continuo.
 
 ##code_esp32
 Contiene los programas desarrollados para el microcontrolador:
@@ -57,9 +57,9 @@ Marca en 5 grados: Establecida como umbral de alerta.
 Marca en 30 grados: Para el seguimiento de la temperatura exterior.
 
 ## img e img_grafana
-## img: Contiene capturas de pantalla detalladas para hacer mas visual el proceso de configuracion de n8n.
+img: Contiene capturas de pantalla detalladas para hacer mas visual el proceso de configuracion de n8n.
 
-## img_grafana: Incluye imagenes del tablero final de control y ejemplos de las configuraciones.
+img_grafana: Incluye imagenes del tablero final de control y ejemplos de las configuraciones.
 
 ## Notas de Mantenimiento
 Se menciona que la Raspberry Pi permanece encendida las 24 horas del dia para garantizar el monitoreo constante. Por esta razon, se recomienda el uso de una carcasa con ventilador o sistema de disipacion para proteger el hardware.

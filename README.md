@@ -36,7 +36,7 @@ n8n Test: Configuracion inicial accesible a traves de localhost para crear secci
 
 n8n produccion: Implementacion del flujo final, realizacion del publish y optimizacion del codigo para asegurar un flujo de datos real y continuo.
 
-##code_esp32
+## code_esp32
 Contiene los programas desarrollados para el microcontrolador:
 
 Modo Prueba: Codigo base para validar que el sensor captura y envia datos correctamente a la infraestructura.

@@ -23,7 +23,7 @@ A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC 
 ## Estructura del Repositorio
 
 ### code_raspberry
-![raspberry pi4](img/raspberry.jpeg)
+<img src="img/raspberry.jpeg" width="300" alt="raspberry pi4">
 En este apartado se detalla la preparación de la unidad central del sistema:
 
 * **Instalación del Sistema Operativo:** Uso de la plataforma oficial Raspberry Pi Imager y configuración inicial del sistema (no está explicado).

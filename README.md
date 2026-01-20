@@ -42,6 +42,7 @@ Contiene los programas desarrollados para el microcontrolador:
 * **Modo Producción:** Código definitivo para el funcionamiento continuo y estable en el entorno real.
 
 ### grafana
+![grafico de monitoreo](img%20grafana/grafico%20grafana.png)
 Guía sobre la visualización y análisis de las métricas:
 
 * **Conexión:** Pasos para vincular la base de datos PostgreSQL con el panel de Grafana.

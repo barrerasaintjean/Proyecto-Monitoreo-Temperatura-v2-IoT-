@@ -23,7 +23,7 @@ A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC 
 ## Estructura del Repositorio
 
 ### code_raspberry
-![raspberry pi4](img/raspberry.png)
+![raspberry pi4](img/raspberry.jpeg)
 En este apartado se detalla la preparación de la unidad central del sistema:
 
 * **Instalación del Sistema Operativo:** Uso de la plataforma oficial Raspberry Pi Imager y configuración inicial del sistema (no está explicado).
@@ -38,7 +38,7 @@ Documentación de la lógica y el flujo de datos:
 * **n8n producción:** Implementación del flujo final, realización del *publish* y optimización del código para asegurar un flujo de datos real y continuo.
 
 ### code_esp32
-![esp32](img/esp32.png)
+![esp32](img/esp32.jpeg)
 Contiene los programas desarrollados para el microcontrolador:
 
 * **Modo Prueba:** Código base para validar que el sensor captura y envía datos correctamente a la infraestructura.

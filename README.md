@@ -23,7 +23,7 @@ A diferencia de proyectos anteriores, la infraestructura ya no depende de un PC 
 ## Estructura del Repositorio
 
 ### code_raspberry
-![grafico de monitoreo](img%20grafana/grafico%20grafana.png)
+![raspberry pi4](img/raspberry.png)
 En este apartado se detalla la preparación de la unidad central del sistema:
 
 * **Instalación del Sistema Operativo:** Uso de la plataforma oficial Raspberry Pi Imager y configuración inicial del sistema (no está explicado).
@@ -31,14 +31,14 @@ En este apartado se detalla la preparación de la unidad central del sistema:
 * **Infraestructura Docker:** Despliegue del ecosistema mediante un archivo en la carpeta `iot_project` que gestiona los contenedores de n8n, Grafana y PostgreSQL de forma simultánea.
 
 ### n8n y n8n_produccion
-![grafico de monitoreo](img%20grafana/grafico%20grafana.png)
+![n8n](img/configuracion%20insertar%20datos%20en%20tabla.png)
 Documentación de la lógica y el flujo de datos:
 
 * **n8n Test:** Configuración inicial accesible a través de localhost para crear secciones de prueba y validar el ingreso de datos a la base de datos.
 * **n8n producción:** Implementación del flujo final, realización del *publish* y optimización del código para asegurar un flujo de datos real y continuo.
 
 ### code_esp32
-![grafico de monitoreo](img%20grafana/grafico%20grafana.png)
+![esp32](img/esp32.png)
 Contiene los programas desarrollados para el microcontrolador:
 
 * **Modo Prueba:** Código base para validar que el sensor captura y envía datos correctamente a la infraestructura.

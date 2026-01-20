@@ -38,7 +38,7 @@ Documentación de la lógica y el flujo de datos:
 * **n8n producción:** Implementación del flujo final, realización del *publish* y optimización del código para asegurar un flujo de datos real y continuo.
 
 ### code_esp32
-![esp32](img/esp32.jpeg)
+<img src="img/esp32.jpeg" width="300" alt="esp32">
 Contiene los programas desarrollados para el microcontrolador:
 
 * **Modo Prueba:** Código base para validar que el sensor captura y envía datos correctamente a la infraestructura.
